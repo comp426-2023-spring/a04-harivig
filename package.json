@@ -11,5 +11,10 @@
     "start": "node server.js"
   },
   "author": "harivig",
-  "license": "SEE LICENSE IN LICENSE"
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "minimist": "^1.2.8"
+  }
 }

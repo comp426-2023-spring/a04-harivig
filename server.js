@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 
 const args = minimist(process.argv.slice(2));
 const port = args.port || 5000;
-
+console.log(port);
 
 
 const app = express();
