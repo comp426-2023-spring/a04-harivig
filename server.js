@@ -19,39 +19,39 @@ app.get('/app', (req, res) => {
 });
 
 app.get('/app/rps', (req, res) => {
-	res.status(200).send(PlayRps());
+	res.status(200).send(rps());
 });
 
 app.get('/app/rpsls', (req, res) => {
-	res.status(200).send(PlayRpsls());
+	res.status(200).send(rpsls());
 });
 
 
 app.get('/app/rps/play', (req, res) => {
-	res.status(200).send(PlayRps(req.query.shot));
+	res.status(200).send(rps(req.query.shot));
 });
 
 app.get('/app/rpsls/play', (req, res) => {
-	res.status(200).send(PlayRpsls(req.query.shot));
+	res.status(200).send(rpsls(req.query.shot));
 });
 
 
 
 app.post('/app/rps/play/', (req, res) => {
-	res.status(200).send(PlayRps(req.body.shot));
+	res.status(200).send(rps(req.body.shot));
 });
 
 app.post('/app/rpsls/play/', (req, res) => {
-	res.status(200).send(PlayRpsls(req.body.shot));
+	res.status(200).send(rpsls(req.body.shot));
 });
 
 
 app.get('/app/rps/play/:shot', (req, res) => {
-	res.status(200).send(PlayRps(req.params.shot));
+	res.status(200).send(rps(req.params.shot));
 });
 
 app.get('/app/rpsls/play/:shot', (req, res) => {
-	res.status(200).send(PlayRpsls(req.params.shot));
+	res.status(200).send(rpsls(req.params.shot));
 });
 
 
